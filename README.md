@@ -11,10 +11,7 @@ This project was created for the **EZ Labs Front-End Intern Test**.
 - Project Structure  
 - How to Run  
 - API Details  
-- Postman Testing  
-- Screenshots  
-- Notes  
-- Developer  
+- Postman Testing   
 
 ---
 
@@ -65,95 +62,84 @@ ezlabs-contact-starter/
 
 
 ```
-
 ## 🧩 How to Run
 
-1️⃣ Clone the repository
-```bash
+### 1️⃣ Clone the repository
+```
 git clone https://github.com/aman3611/ezlabs-contact-starter.git
-cd ezlabs-contact-starter
-2️⃣ Install dependencies
-```bash
+```
+
+
+### 2️⃣ Install dependencies
+```
 npm install
-3️⃣ Start the development server
+```
+
+
+### 3️⃣ Start the development server
+```
 npm run dev
+```
 
-4️⃣ Open in browser
 
-Visit → http://localhost:5173
+### 4️⃣ Open in browser
+```
+Visit → [http://localhost:5173](http://localhost:5173)
+```
+---
 
-🌐 API Details
-Endpoint
+## 🌐 API Details
+
+### Endpoint
+```
 POST https://vernanbackend.ezlab.in/api/contact-us/
 
-Request Body Example
+### Request Body Example
 {
-  "name": "Aman",
-  "email": "aman@example.com",
-  "phone": "9876543210",
-  "message": "Hello!"
+"name": "Aman",
+"email": "aman2505@gmail.com",
+"phone": "9876543210",
+"message": "Hello EZ Labs"
 }
+```
 
-Success Response Example
+### Success Response Example
+```
 {
-  "message": "Contact request submitted and email sent successfully",
-  "data": {
-    "id": 2474,
-    "name": "Aman",
-    "email": "aman@example.com",
-    "phone": "9876543210",
-    "message": "Hello!",
-    "created_at": "2025-11-08T09:40:51.403Z",
-    "updated_at": "2025-11-08T09:40:51.403Z"
-  }
+"message": "Contact request submitted and email sent successfully",
+"data": {
+"id": 2474,
+"name": "Aman",
+"email": "aman2505@gmail.com",
+"phone": "9876543210",
+"message": "Hello EZ Labs",
+"created_at": "2025-11-08T09:40:51.403Z",
+"updated_at": "2025-11-08T09:40:51.403Z"
 }
+}
+```
 
-🧪 Postman Testing
+---
 
-Open Postman
+## 🧪 Postman Testing
 
-Set method → POST
-
-URL → https://vernanbackend.ezlab.in/api/contact-us/
-
-Go to Headers tab → add
-
-Key: Content-Type
-
-Value: application/json
-
-Go to Body → raw → JSON, and enter:
-
+1. Open **Postman**
+2. Set method → **POST**
+3. URL → `https://vernanbackend.ezlab.in/api/contact-us/`
+4. Go to **Headers** tab → add  
+   - **Key:** `Content-Type`  
+   - **Value:** `application/json`
+5. Go to **Body → raw → JSON**, and enter:
+```
 {
-  "name": "Aman",
-  "email": "aman@example.com",
-  "phone": "9876543210",
-  "message": "Hello!"
+"name": "Aman",
+"email": "aman@example.com",
+"phone": "9876543210",
+"message": "Hello!"
 }
-
-
-Click Send
-
-Response will be:
-
+```
+6. Click **Send**
+7. Response will be:
+```
 "Contact request submitted and email sent successfully"
-
-🖼️ Screenshots
-
-(You can add screenshots in a folder named /screenshots and reference them below.)
-
-![Postman Request](./images/postman1.png)
-![Postman Response](./screenshots/postman-response.png)
-![App UI](./screenshots/app-ui.png)
-
-📝 Notes
-
-Made as part of EZ Labs Front-End Intern Assessment (2025).
-
-Uses React hooks (useState) for form handling.
-
-Directly connects with live API — no backend setup required locally.
-
-Includes a Postman collection for easy API verification.
-
-Responsive and mobile-friendly interface.
+```
