@@ -43,7 +43,7 @@ If the request is successful, it displays a success message and clears the form.
 ---
 
 ## 🧱 Project Structure
-
+```
 ezlabs-contact-starter/
 │
 ├── index.html # HTML entry file with favicon link
@@ -64,15 +64,16 @@ ezlabs-contact-starter/
 └── README.md # This documentation
 
 
----
+```
 
 ## 🧩 How to Run
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/aman3611/ezlabs-contact-starter.git
 cd ezlabs-contact-starter
 2️⃣ Install dependencies
+```bash
 npm install
 3️⃣ Start the development server
 npm run dev
