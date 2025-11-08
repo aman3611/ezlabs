@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "EZ Labs Contact API",
+    "_postman_id": "00000000-0000-0000-0000-000000000000",
+    "description": "POST contact-us per assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Contact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+          "protocol": "https",
+          "host": [
+            "vernanbackend",
+            "ezlab",
+            "in"
+          ],
+          "path": [
+            "api",
+            "contact-us",
+            ""
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Amit\", \"email\": \"hsatyamrav@gmail.com\", \"phone\": \"908765498\", \"message\": \"Hello from Postman\"}"
+        }
+      },
+      "response": []
+    }
+  ]
+}
